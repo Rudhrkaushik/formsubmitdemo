@@ -5,11 +5,15 @@
 </head>
 <body>
     <h1 font face="" align="center">Admission Form</h1>
+    <!-- Spam Prevention -->
+    <input type="text" name="_honey" style="display: none;">
+    <!-- Disable Captcha-->
+    <input type="hidden" name="_captcha" value="false">
     <form action="https://formsubmit.co/rudhrkaushik492@gmail.com" method="POST">
         Enter Your Name:<input type="text" name="Name" required>
         <br><br>Class:
             
-            <br><select name="Class" size="5" width="45" >
+            <br><select name="Class" size="5" width="45" required>
             <option value="6th">6th
                 <option value="7th">7th
                     <option value="8th">8th
@@ -21,7 +25,7 @@
         
 
         <br><br>Section:
-            <br><select name="Section" size="5" width="45">
+            <br><select name="Section" size="5" width="45" required>
                 <option value="A">A
                     <option value="B">B
                         <option value="C">C
@@ -41,7 +45,7 @@
     </p>
         Comment:
         <br>
-        <textarea name="Comments" rows="4" cols="50" wrap></textarea>
+        <textarea name="Comments" rows="4" cols="50" wrap required></textarea>
         <br>
         <button type="submit">Submit</button>
         <input type="reset">
